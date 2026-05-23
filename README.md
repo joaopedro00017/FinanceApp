@@ -217,7 +217,30 @@ A aplicação estará disponível em `http://localhost:3000`.
 
 ## Screenshots
 
-> Em breve.
+### Desktop — Modo Claro
+![Dashboard desktop modo claro](screenshots/desktop-light.png)
+
+### Desktop — Modo Escuro
+![Dashboard desktop modo escuro](screenshots/desktop-dark.png)
+
+### Mobile — Dashboard
+![Dashboard mobile](screenshots/mobile-dashboard.png)
+
+### Mobile — Formulário de Nova Movimentação
+![Formulário mobile](screenshots/mobile-form.png)
+
+---
+
+## Observação sobre o Frontend
+
+Alguns elementos visuais da interface são **ilustrativos** e não possuem funcionalidade implementada, pois o foco do projeto está no gerenciamento de transações financeiras. São eles:
+
+- **Notificações** — o ícone de sino é decorativo
+- **Perfil / João Doe** — sem autenticação ou cadastro de usuário
+- **Relatórios** — seção presente na navegação mas sem conteúdo
+- **Configurações** — item no menu sem tela associada
+
+Essas seções representam possíveis evoluções futuras do projeto.
 
 ---
 
