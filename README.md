@@ -18,24 +18,26 @@ Aplicação full-stack de gestão de finanças pessoais desenvolvida com **Java 
 ## Tecnologias Utilizadas
 
 ### Backend
-| Tecnologia | Finalidade |
-|---|---|
-| Java 21 | Linguagem principal |
-| Spring Boot | Framework para API REST |
-| Spring Data JPA / Hibernate | ORM e abstração do banco de dados |
-| PostgreSQL | Banco de dados relacional |
-| Maven | Gerenciamento de build e dependências |
-| Lombok | Redução de código boilerplate |
-| UUID | Chaves primárias sem colisão |
+
+| Tecnologia                  | Finalidade                            |
+| --------------------------- | ------------------------------------- |
+| Java 21                     | Linguagem principal                   |
+| Spring Boot                 | Framework para API REST               |
+| Spring Data JPA / Hibernate | ORM e abstração do banco de dados     |
+| PostgreSQL                  | Banco de dados relacional             |
+| Maven                       | Gerenciamento de build e dependências |
+| Lombok                      | Redução de código boilerplate         |
+| UUID                        | Chaves primárias sem colisão          |
 
 ### Frontend
-| Tecnologia | Finalidade |
-|---|---|
+
+| Tecnologia              | Finalidade                        |
+| ----------------------- | --------------------------------- |
 | Next.js 15 (App Router) | Framework React com suporte a SSR |
-| React 19 | Biblioteca de componentes de UI |
-| TypeScript | Tipagem estática |
-| Tailwind CSS 4 | Estilização utilitária |
-| Lucide React | Biblioteca de ícones |
+| React 19                | Biblioteca de componentes de UI   |
+| TypeScript              | Tipagem estática                  |
+| Tailwind CSS 4          | Estilização utilitária            |
+| Lucide React            | Biblioteca de ícones              |
 
 ---
 
@@ -81,15 +83,17 @@ Aplicação full-stack de gestão de finanças pessoais desenvolvida com **Java 
 ## Documentação da API
 
 ### `GET /api/transacoes`
+
 Retorna todas as transações cadastradas.
 
 **Resposta `200 OK`**
+
 ```json
 [
   {
     "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
     "descricao": "Salário",
-    "valor": 5000.00,
+    "valor": 5000.0,
     "data": "2025-05-01",
     "tipo": "RECEITA"
   }
@@ -99,13 +103,15 @@ Retorna todas as transações cadastradas.
 ---
 
 ### `POST /api/transacoes`
+
 Cria uma nova transação.
 
 **Corpo da requisição**
+
 ```json
 {
   "descricao": "Aluguel",
-  "valor": 1200.00,
+  "valor": 1200.0,
   "data": "2025-05-05",
   "tipo": "DESPESA"
 }
@@ -116,6 +122,7 @@ Cria uma nova transação.
 ---
 
 ### `PUT /api/transacoes/{id}`
+
 Atualiza uma transação existente pelo UUID.
 
 **Resposta `200 OK`**
@@ -123,6 +130,7 @@ Atualiza uma transação existente pelo UUID.
 ---
 
 ### `DELETE /api/transacoes/{id}`
+
 Remove uma transação pelo UUID.
 
 **Resposta `204 No Content`**
@@ -191,6 +199,7 @@ mvn spring-boot:run
 A API estará disponível em `http://localhost:8080`.
 
 **Referência do `application.properties`:**
+
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/finance_db
 spring.datasource.username=seu_usuario
@@ -218,15 +227,19 @@ A aplicação estará disponível em `http://localhost:3000`.
 ## Screenshots
 
 ### Desktop — Modo Claro
+
 ![Dashboard desktop modo claro](screenshots/desktop-light.png)
 
 ### Desktop — Modo Escuro
+
 ![Dashboard desktop modo escuro](screenshots/desktop-dark.png)
 
 ### Mobile — Dashboard
+
 ![Dashboard mobile](screenshots/mobile-dashboard.png)
 
 ### Mobile — Formulário de Nova Movimentação
+
 ![Formulário mobile](screenshots/mobile-form.png)
 
 ---
@@ -247,3 +260,17 @@ Essas seções representam possíveis evoluções futuras do projeto.
 ## Licença
 
 Este projeto é open source e está disponível sob a [Licença MIT](LICENSE).
+
+---
+
+## 🛠️ Uso de Inteligência Artificial
+
+Este projeto foi desenvolvido de forma autônoma por mim, mas contou com o apoio do assistente de IA **Claude** durante o processo.
+
+A ferramenta foi utilizada seguindo as melhores práticas do mercado para o aumento de produtividade e qualidade de software, auxiliando especificamente em:
+
+- **Refatoração:** Sugestões de melhorias na estrutura de algumas funções e componentes.
+- **Revisão de Código:** Validação de boas práticas (como a correta aplicação de padrões REST e Clean Code).
+- **Documentação:** Auxílio na formatação e design técnico deste arquivo `README.md`.
+
+_Nota: O histórico de commits pode referenciar o assistente devido à integração de ferramentas de IA locais durante o desenvolvimento, mas toda a arquitetura, lógica de negócios e decisões técnicas foram planejadas e executadas por mim._
