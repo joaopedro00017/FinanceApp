@@ -263,14 +263,16 @@ Este projeto é open source e está disponível sob a [Licença MIT](LICENSE).
 
 ---
 
-## 🛠️ Uso de Inteligência Artificial
+## 🛠️ Uso de Inteligência Artificial e Foco do Projeto
 
-Este projeto foi desenvolvido de forma autônoma por mim, mas contou com o apoio do assistente de IA **Claude** durante o processo.
+Este projeto foi desenvolvido com foco principal no **Backend (Java Spring Boot)**, visando demonstrar habilidades em arquitetura REST, persistência de dados com Spring Data JPA, boas práticas de Clean Code e integração com PostgreSQL.
 
-A ferramenta foi utilizada seguindo as melhores práticas do mercado para o aumento de produtividade e qualidade de software, auxiliando especificamente em:
+Para viabilizar uma interface gráfica moderna e responsiva sem desviar o foco do desenvolvimento backend, utilizei o assistente de IA **Claude** para acelerar a geração da maior parte do código do **Frontend (Next.js/Tailwind)**.
 
-- **Refatoração:** Sugestões de melhorias na estrutura de algumas funções e componentes.
-- **Revisão de Código:** Validação de boas práticas (como a correta aplicação de padrões REST e Clean Code).
-- **Documentação:** Auxílio na formatação e design técnico deste arquivo `README.md`.
+A ferramenta foi utilizada para:
 
-_Nota: O histórico de commits pode referenciar o assistente devido à integração de ferramentas de IA locais durante o desenvolvimento, mas toda a arquitetura, lógica de negócios e decisões técnicas foram planejadas e executadas por mim._
+- Estruturação rápida de componentes visuais do React.
+- Estilização com Tailwind CSS.
+- Agilização do consumo da API REST no front-end.
+
+_Nota: O histórico de commits pode referenciar o assistente devido ao uso de ferramentas locais de IA durante o desenvolvimento, mas toda a lógica de negócios, modelagem do banco de dados e arquitetura do ecossistema Spring foram inteiramente planejadas e codificadas por mim._
