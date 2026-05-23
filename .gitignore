@@ -1,0 +1,26 @@
+# ===== BACKEND (Maven / Spring Boot) =====
+gerenciador_de_financas/target/
+gerenciador_de_financas/.mvn/wrapper/maven-wrapper.jar
+gerenciador_de_financas/*.class
+
+# Credenciais — copie application.properties.example e preencha localmente
+gerenciador_de_financas/src/main/resources/application.properties
+
+# IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# ===== FRONTEND (Node / Next.js) =====
+gerenciador-financas-front/node_modules/
+gerenciador-financas-front/.next/
+gerenciador-financas-front/out/
+gerenciador-financas-front/.env
+gerenciador-financas-front/.env.local
+gerenciador-financas-front/.env.production
+
+# ===== Sistema =====
+.DS_Store
+Thumbs.db

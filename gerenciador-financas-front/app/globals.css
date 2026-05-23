@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+  body {
+    @apply font-sans bg-[#F8FAFC] text-[#0F172A];
+  }
+  .dark body {
+    @apply bg-[#0F172A] text-[#F8FAFC];
+  }
+}
