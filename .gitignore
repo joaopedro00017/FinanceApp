@@ -21,6 +21,14 @@ gerenciador-financas-front/.env
 gerenciador-financas-front/.env.local
 gerenciador-financas-front/.env.production
 
+# ===== Arquivos de IA / ferramentas =====
+CLAUDE.md
+AGENTS.md
+**/CLAUDE.md
+**/AGENTS.md
+**/.claude/
+.claude/
+
 # ===== Sistema =====
 .DS_Store
 Thumbs.db
